@@ -1,0 +1,33 @@
+{
+  "name": "xinput.js",
+  "version": "1.0.0",
+  "description": "xinput wrapper. Access xinput based controllers.",
+  "main": "index.js",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "build": "node-gyp build"
+  },
+  "author": "davenonymous",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "nan": "^2.2.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thraaawn/xinputjs.git"
+  },
+  "keywords": [
+    "gamepad",
+    "joystick",
+    "xinput"
+  ],
+  "bugs": {
+    "url": "https://github.com/thraaawn/xinputjs/issues"
+  },
+  "homepage": "https://github.com/thraaawn/xinputjs"
+}
