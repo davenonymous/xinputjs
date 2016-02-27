@@ -1,5 +1,7 @@
 > Node.js xinput wrapper. Access xinput based controllers
 
+[![Build status](https://ci.appveyor.com/api/projects/status/1nxo39ety9q5itfs?svg=true)](https://ci.appveyor.com/project/thraaawn/xinputjs)
+
 xinput.js wraps the xinput game controller API. Besides allowing raw access to the xinput device, it also provides a small wrapper class which emits events based on controller input.
 
 ## Contents
