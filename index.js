@@ -81,13 +81,13 @@ class XInputDevice extends EventEmitter {
 
 			if(state) {
 				this._holdTimes[key] = new Date().getTime();
-				this._holdTimers[key] = setTimeout(() => {
+				this._holdTimers[key] = setTimeout((() => {
 					let now = new Date().getTime();
 					let timePressed = this._holdTimes[key] || now;
 					let elapsed = now - timePressed;
 
 					this.emit("button-long", key, elapsed);
-				}.bind(this), this.options.holdtime);
+				}).bind(this), this.options.holdtime);
 			} else {
 				let now = new Date().getTime();
 				let timePressed = this._holdTimes[key] || now;
